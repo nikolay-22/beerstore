@@ -2,10 +2,17 @@
 {% block title %}Beers{% endblock title %}
 
 {% block content %}
+    <a class="btn btn-outline-primary" href="{% url 'beer_review' %}">Review a bier</a>
+    {% if request.user.is_staff %}
+    <div>
+        <a class="btn btn-primary mt-2" href="{% url 'beer_add' %}">Add a bier</a>
+        <p></p>
+    </div>
+    {% endif %}
+    <h3>Click a beer for details and reviews:</h3>
     {% for beer in beer_list %}
         <div>
-{#            <h2><a href="{% url 'beer_details' beer.pk %}">{{ beer.brand }}</a></h2>#}
-        <h2><a href="{{ beer.get_absolute_url }}">{{ beer.brand }}</a></h2>
+            <h4><a href="{{ beer.get_absolute_url }}">{{ beer.brand }}</a></h4>
         </div>
     {% endfor %}
 {% endblock content %}

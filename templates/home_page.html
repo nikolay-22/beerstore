@@ -4,17 +4,14 @@
 {% block title %}HOMEPAGE{% endblock title %}
 
 {% block content %}
-    <h1>Welcome to beerland!</h1>
+    <h1>Welcome to Beerland!</h1>
     {% if user.is_authenticated %}
         <h2>Hi {{ user.username }}! Search the beers:</h2>
         <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
             <input name="query" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         </form>
-        <p><a href="{% url 'logout' %}">Get me out!</a></p>
     {% else %}
         <h2><p>You are not logged in. Log in to explore and review beers!</p></h2>
-{#        <a href="{% url 'login' %}">Log me in!</a>#}
-{#        <a href="{% url 'sign_up' %}">Sign me up!</a>#}
     {% endif %}
     <p><img class="beerpicture" src="{% static 'images/beersea.jpg' %}"></p>
 {% endblock content %}
