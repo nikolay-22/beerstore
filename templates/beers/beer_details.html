@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{{ object.title }}{% endblock title %}
+
+{% block content %}
+    <div class="book-detail">
+        <h2><a href="">{{ beer.brand }}</a></h2>
+        <p>Brand: {{ beer.brand }}</p>
+        <p>Producer: {{ beer.producer }}</p>
+        <p>Style: {{ beer.style }}</p>
+        <p>Alcohol: {{ beer.alc_volume|floatformat:1 }}</p>
+        <p>Price, euro: {{ beer.price|floatformat:2 }}</p>
+        <p>ADD THE OTHER DETAILS!!!</p>
+    </div>
+{% endblock content %}
