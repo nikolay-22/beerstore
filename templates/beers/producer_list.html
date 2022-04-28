@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Producers contacts{% endblock title %}
+
+{% block content %}
+
+    {% for producer in producer_list %}
+{#        <div>#}
+            <h5><p>Producer name: {{ producer.name}}, e-mail: {{ producer.email }}, web-site: {{ producer.website}}</p></h5>
+{#        </div>#}
+    {% endfor %}
+{% endblock content %}

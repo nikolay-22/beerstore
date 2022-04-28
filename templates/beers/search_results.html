@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Search the beers!{% endblock title %}
+
+{% block content %}
+    <h1>Search Results</h1>
+    {% for beer in beer_list %}
+        <div>
+            <h3><a href="{{ beer.get_absolute_url }}">{{ beer.brand }}</a></h3>
+            <p>Brand: {{ beer.brand }}</p>
+            <p>Price: $ {{ beer.price }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
