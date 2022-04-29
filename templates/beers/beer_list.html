@@ -13,6 +13,29 @@
     {% for beer in beer_list %}
         <div>
             <h4><a href="{{ beer.get_absolute_url }}">{{ beer.brand }}</a></h4>
+{#            <img class="beerlabel" src="{{ beer.label.url}}" alt="{{ beer.brand }}">#}
         </div>
     {% endfor %}
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+{##}
+{#        <section id="welcome-world">#}
+{#        {% for beer in beer_list %}#}
+{#            <div class="beer">#}
+{#                <div class="image-wrap">#}
+{#                    <img src={{ beer.label.url }} alt="NO IMAGE">#}
+{#                    <img class="beerlabel" src="{{ beer.label.url}}" alt="{{ beer.brand }}">#}
+{#                </div>#}
+{#                <h3><a href="{{ beer.get_absolute_url }}">{{ beer.brand }}</a></h3>#}
+{#            </div>#}
+{#        {% endfor %}#}

@@ -11,3 +11,87 @@ h1 {
     height: 300px;
     width: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#welcome-world {*/
+/*    width: auto;*/
+/*    justify-content: right;*/
+/*    padding: 25px 15px 20px;*/
+/*    position: relative;*/
+/*    box-sizing: border-box;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#welcome-world .welcome-message {*/
+/*    display: inline-block;*/
+/*    z-index: 999;*/
+/*    margin: 0 auto;*/
+/*    left: 0;*/
+/*    top: 40%;*/
+/*    text-align: center;*/
+/*    width: 30%*/
+/*}*/
+
+/*#welcome-world>img {*/
+/*    height: auto;*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*    max-width: 60%;*/
+/*    margin-left: auto;*/
+
+/*}*/
+
+/*.beer {*/
+/*    box-shadow: 0 0 30px 0;*/
+/*    margin-top: 20px;*/
+/*    padding: 50px;*/
+/*    margin-left: 50px;*/
+/*    background-position: right 35% bottom 45%;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 15px;*/
+/*    float: left;*/
+/*    height: auto;*/
+/*    color: rgb(204, 144, 131);*/
+/*}*/
+
+/*.image-wrap {*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*    display: inline-block;*/
+/*    border-radius: 50%;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.image-wrap>img {*/
+/*    max-width: 100%;*/
+/*}*/
+
+/*.beer>h3 {*/
+/*    font-family: "Agency FB", serif;*/
+/*    font-size: 42px;*/
+/*    font-weight: 700;*/
+/*    line-height: normal;*/
+/*    width: 100%;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*    transition: all 0.5s ease-out;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*}*/
