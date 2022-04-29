@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from beerstore.beer_app.models import Beer, Producer, Review
+from beerstore.beer_app.models import Beer, Producer, Review, BeerDescription
 
 
 class ReviewInline(admin.TabularInline):
@@ -18,6 +18,10 @@ class BeerAdmin(admin.ModelAdmin):
 
 @admin.register(Producer)
 class ProducerAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(BeerDescription)
+class BeerDescriptionAdmin(admin.ModelAdmin):
     pass
 
 

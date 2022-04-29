@@ -25,6 +25,15 @@ class Producer(models.Model):
         return self.name
 
 
+class BeerDescription(models.Model):
+    description = models.CharField(
+        max_length=255,
+    )
+
+    def __str__(self):
+        return self.description
+
+
 class Beer(models.Model):
     LAGER = 'Lager'
     STOUT = 'Stout'
@@ -64,6 +73,13 @@ class Beer(models.Model):
     producer = models.ForeignKey(
         Producer,
         on_delete=models.CASCADE,
+    )
+
+    beerdescription = models.ForeignKey(
+        BeerDescription,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
     )
 
     def __str__(self):

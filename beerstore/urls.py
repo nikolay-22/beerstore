@@ -22,7 +22,7 @@ from django.urls import path, include
 from beerstore import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('super/', admin.site.urls),
     path('accounts/', include('beerstore.users.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     # path('accounts/', include('beerstore.users.urls')),
